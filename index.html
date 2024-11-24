@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Talwind CSS</title>
+    <link rel="stylesheet" href="src/output.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body class="font-Poppin">
+    <!--header navbar -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container">
+        <div class="flex items-center jutstify-between relative">
+          <div class="px-4">
+            <a href="#home" class="font-bold text-primary block py-6 text-xl">Kevin Marbun</a>
+          </div>
+
+          <div class="flex items-center px4">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4">
+              <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+            </button>
+            <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-sm rounded-lg max-w-[250px] w-full right-4 top-full">
+              <ul class="block">
+                <li><a href="#home" class="text-base text-dark py-2 mx-8">Beranda</a></li>
+                <li><a href="#about">Tentang Saya</a></li>
+                <li><a href="#home">Beranda</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="home" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-lg">Halo Semua👋, Saya <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Kevin Marbun</span></h1>
+            <h2 class="font-medium text-secondry text-lg mb-5">Teknik Komputer in <span class="text-yellow-600">Medicom.</span></h2>
+            <p class="font-medium text-slate-400 mb-10 leading-relaxed text-base md:text-lg">Belajar membuat website sederhana cukup menyenangkan.</p>
+            <a href="" class="text-base font-semibold bg-primary text-white py-3 px-8 rounded-full hover:opacity-80 hover:shadow-sm transition duration-300 ease-in-out">Hubungi Saya</a>
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="mt-20 lg:mt-9 lg:right-0">
+              <img src="src/img/Profile.jpg" alt="GambarKevin" width="300" class="max-w-full mx-auto rounded-full shadow-lg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section staet -->
+    <section id="about" class="pt-36 pb-32">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h4 class="font-bold uppercase text-lg text-primary mb-3 lg:text-xl">Tentang Saya</h4>
+            <h2 class="font-bold text-dark text-3xl mb-2 max-w-xl lg:text-4xl">Cooming Soon...</h2>
+            <h3 class="text-yellow-600 text-base font-semibold lg:text-2xl">Mahasiswa Amik Medicom</h3>
+            <p class="text-secondry font-medium text-base max-w-xl mt-6 md:text-lg">Lagi tahap renovasi soalnya masih binggung mau di buat apa disini, tapi kalau ada saran boleh lah di tindak lanjuti</p>
+          </div>
+
+          <div class="w-full px-4 lg:w-1/2">
+            <h3 class="text-dark font-bold mb-5 text-3xl lg:text-4xl lg:pt-10">Mari Berteman</h3>
+            <p class="text-secondry font-medium text-base max-w-xl md:text-lg">Biar jangan asing kali kita ya kan agak di follow follow dikit biar bisa kita bekawan.selow di follback nya nanti oke 😁</p>
+
+            <div class="flex items-center">
+              <!-- Youtube -->
+              <a
+                href="https://www.youtube.com/channel/UC77K7cXc-LJBJFrViXRavgw"
+                target="_blank"
+                class="w-9 h-9 border rounded-full flex justify-center items-center text-secondry hover:text-white hover:bg-red-600 mr-3 mt-2 transition duration-300 ease-in-out"
+              >
+                <i data-feather="youtube"></i
+              ></a>
+
+              <!-- Instagram -->
+              <a
+                href="https://www.instagram.com/ardyy.marbun/profilecard/?igsh=MWR1anJicXphcTAy"
+                target="_blank"
+                class="w-9 h-9 border rounded-full flex justify-center items-center text-secondry hover:text-white hover:bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 hover:from-purple-600 hover:via-pink-500 hover:to-yellow-400 mr-3 mt-2 transition duration-300 ease-in-out"
+              >
+                <i data-feather="instagram"></i
+              ></a>
+
+              <!-- Facebook -->
+              <a
+                href="https://www.facebook.com/profile.php?id=100051067216494"
+                target="_blank"
+                class="w-9 h-9 border rounded-full flex justify-center items-center text-secondry hover:text-white hover:bg-blue-600 mr-3 mt-2 transition duration-300 ease-in-out"
+              >
+                <i data-feather="facebook"></i
+              ></a>
+
+              <!-- Telegram -->
+              <a href="https:/t.me/081370139279" target="_blank" class="w-9 h-9 border rounded-full flex justify-center items-center text-secondry hover:text-white hover:bg-sky-500 mr-3 mt-2 transition duration-300 ease-in-out">
+                <i data-feather="send"></i
+              ></a>
+
+              <!-- Github -->
+              <!-- Telegram -->
+              <a href="https:/github.com/KevinMarbun" target="_blank" class="w-9 h-9 border rounded-full flex justify-center items-center text-secondry hover:text-white hover:bg-dark mr-3 mt-2 transition duration-300 ease-in-out">
+                <i data-feather="github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      feather.replace();
+    </script>
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>

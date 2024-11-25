@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Talwind CSS</title>
+    <title>KevinMarbun</title>
     <link rel="stylesheet" href="src/output.css" />
 
     <style>
@@ -15,20 +15,22 @@
     <!--header navbar -->
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
       <div class="container">
-        <div class="flex items-center jutstify-between relative">
+        <div class="flex items-center jutstify-between relative lg:justify-between">
           <div class="px-4">
             <a href="#home" class="font-bold text-primary block py-6 text-xl">Kevin Marbun</a>
           </div>
 
-          <div class="flex items-center px4">
-            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4">
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
               <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
               <span class="hamburger-line transition duration-300 ease-in-out"></span>
               <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
             </button>
-            <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-sm rounded-lg max-w-[250px] w-full right-4 top-full">
-              <ul class="block">
-                <li><a href="#home" class="text-base text-dark py-2 mx-8">Coming Soon...</a></li>
+            <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-sm rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:max-w-full lg:bg-transparent lg:shadow-none lg:rounded-none">
+              <ul class="block lg:flex">
+                <li class="group"><a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a></li>
+                <li class="group"><a href="#about" class="text-base text-dark flex py-2 mx-8 group-hover:text-primary">Tentang Saya</a></li>
+                <li class="group"><a href="#galery" class="text-base text-dark flex py-2 mx-8 group-hover:text-primary">Galery</a></li>
               </ul>
             </nav>
           </div>
@@ -47,14 +49,14 @@
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
             <div class="mt-20 lg:mt-9 lg:right-0">
-              <img src="src/img/Profile.jpg" alt="GambarKevin" width="300" height="300" class="max-w-full mx-auto rounded-full shadow-lg object-cover" />
+              <img src="img/Profile.jpg" alt="GambarKevin" width="300" height="300" class="max-w-full mx-auto rounded-full shadow-lg object-cover" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About Section staet -->
+    <!-- About Section start -->
     <section id="about" class="pt-36 pb-32">
       <div class="container">
         <div class="flex flex-wrap">
@@ -112,6 +114,49 @@
         </div>
       </div>
     </section>
+
+    <!-- Galery -->
+    <section class="pt-36" id="galery"></section>
+    <h1 class="font-bold uppercase text-lg text-primary mb-1 lg:text-xl text-center">Galery Saya</h1>
+    <p class="text-secondry text-center">This is Our Galery Men...🔥</p>
+    <div class="container mt-12 mb-36 grid grid-cols-2 gap-2 ">
+
+
+      <div class="h-15 bg-blue-500 aspect-[3456/5234]  overflow-hidden  rounded-lg hover:scale-95 transition-all duration-500 ease-in-out group relative cursor-pointer">
+        <div class="w-full h-full bg-[url('/img/1.jpeg')]  bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 ease-in-out" ></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[3456/5234]  overflow-hidden  rounded-lg hover:scale-95 transition-all duration-500 ease-in-out group relative cursor-pointer">
+        <div class="w-full h-full bg-[url('/img/2.jpeg')]  bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 ease-in-out" ></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[3456/5234]  overflow-hidden  rounded-lg hover:scale-95 transition-all duration-500 ease-in-out group relative cursor-pointer">
+        <div class="w-full h-full bg-[url('/img/3.jpeg')]  bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 ease-in-out" ></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[3456/5234]  overflow-hidden  rounded-lg hover:scale-95 transition-all duration-500 ease-in-out group relative cursor-pointer">
+        <div class="w-full h-full bg-[url('/img/4.jpeg')]  bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 ease-in-out" ></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[3456/5234]  overflow-hidden  rounded-lg hover:scale-95 transition-all duration-500 ease-in-out group relative cursor-pointer">
+        <div class="w-full h-full bg-[url('/img/5.jpeg')]  bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 ease-in-out" ></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[3456/5234]  overflow-hidden  rounded-lg hover:scale-95 transition-all duration-500 ease-in-out group relative cursor-pointer">
+        <div class="w-full h-full bg-[url('/img/6.jpeg')]  bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 ease-in-out" ></div>
+      </div>
+      <!-- <div class="h-15 bg-blue-500 aspect-[3456/5234] relative overflow-hidden">
+        <div class="w-full h-full bg-[url('/img/1.jpeg')] rounded-lg bg-cover bg-center p-4 absolute"></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[3456/5234]">
+        <div class="w-full h-full bg-[url('/img/1.jpeg')] rounded-lg bg-cover bg-center p-4"></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[3456/5234]">
+        <div class="w-full h-full bg-[url('/img/1.jpeg')] rounded-lg bg-cover bg-center p-4"></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[3456/5234]">
+        <div class="w-full h-full bg-[url('/img/1.jpeg')] rounded-lg bg-cover bg-center p-4"></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[3456/5234]">
+        <div class="w-full h-full bg-[url('/img/1.jpeg')] rounded-lg bg-cover bg-center p-4"></div> -->
+      </div>
+    </div>
+
     <script>
       feather.replace();
     </script>

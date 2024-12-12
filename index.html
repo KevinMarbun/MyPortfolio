@@ -1,3 +1,4 @@
+<!-- truncate membuat tulisan yang lebih dari pembungkusnya menjadi ... -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -179,6 +180,92 @@
     </section>
 
     <div class="footer">
+      <p class="container mx-auto font-Poppin text-xl">
+        Dim DbObat As ADODB.Connection <br />
+        Dim RsObat As ADODB.Recordset
+        <br /><br /><br />
+        Private Sub Form_Load()<br />
+        Set DbObat = New ADODB.Connection<br />
+        DbObat.Provider = "MICROSOFT.JET.OLEDB.4.0"<br />
+        DbObat.CursorLocation = adUseClient<br />
+        DbObat.Open "D:\DataObat.mdb"<br />
+        Set RsObat = New ADODB.Recordset<br />
+        RsObat.Open "Obat", DbObat, 2, 3<br />
+        Set DataGrid1.DataSource = RsObat<br />
+        End Sub
+        <br /><br /><br />
+        Sub kosong()<br />
+        t1 = ""<br />
+        t2 = ""<br />
+        t3 = ""<br />
+        t4 = ""<br />
+        t5 = ""<br />
+        t6 = ""<br />
+        End Sub
+        <br /><br /><br />
+        Private Sub c1_Click()<br />
+        RsObat.AddNew<br />
+        RsObat!KodeObat = t1<br />
+        RsObat!NamaObat = t2<br />
+        RsObat!JenisObat = t3<br />
+        RsObat!FungsiObat = t4<br />
+        RsObat!HargaObat = t5<br />
+        RsObat!TanggalKadaluarsaObat = t6<br />
+        RsObat.Update<br />
+        MsgBox "Data Berhasil di Simpan"<br />
+        Call kosong<br />
+        End Sub
+        <br /><br /><br />
+        Private Sub c2_Click()<br />
+        RsObat!KodeObat = t1<br />
+        RsObat!NamaObat = t2<br />
+        RsObat!JenisObat = t3<br />
+        RsObat!FungsiObat = t4<br />
+        RsObat!HargaObat = t5<br />
+        RsObat!TanggalKadaluarsaObat = t6<br />
+        RsObat.Update<br />
+        MsgBox "Data Berhasil di Ubah"<br />
+        Form_Load<br />
+        End Sub
+        <br /><br /><br />
+        Private Sub c3_Click()<br />
+        Set RsObat = New ADODB.Recordset<br />
+        RsObat.Open "delete*from Obat where KodeObat= '" & t1 & "'", DbObat, 2, 3<br />
+        Set RsObat = New ADODB.Recordset<br />
+        RsObat.Open "Obat", DbObat, 2, 3<br />
+        Set RsObat.DataSource = RsObat<br />
+        MsgBox "Data Berhasil di Hapus"<br />
+        Call kosong<br />
+        Form_Load<br />
+
+        End Sub
+        <br /><br /><br />
+        Private Sub c4_Click()<br />
+        Dim cari As String<br />
+        cari = InputBox("Ketik Kode Obat")<br />
+        Set RsObat = New ADODB.Recordset<br />
+        RsObat.Open "select*from Obat where KodeObat= '" & cari & "'", DbObat, 2, 3<br />
+        If RsObat.RecordCount >= 1 Then<br />
+        t1 = RsObat!KodeObat<br />
+        t2 = RsObat!NamaObat<br />
+        t3 = RsObat!JenisObat<br />
+        t4 = RsObat!FungsiObat<br />
+        t5 = RsObat!HargaObat<br />
+        t6 = RsObat!TanggalKadaluarsaObat<br />
+        Else<br />
+        MsgBox "data tidak ditemukan"<br />
+        Exit Sub<br />
+        End If
+        <br />
+        End Sub
+        <br /><br /><br />
+        Private Sub ct1_Click()<br />
+        CR.ReportFileName = "d:\Obat.rpt"<br />
+        CR.WindowState = crptMaximized<br />
+        CR.RetrieveDataFiles<br />
+        CR.PrintReport<br />
+        End Sub<br />
+      </p>
       <h1 class="uppercase text-4xl pb-32 text-center font-semibold">cooming soon...</h1>
     </div>
 
